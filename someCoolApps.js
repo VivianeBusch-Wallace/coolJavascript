@@ -27,24 +27,3 @@ let palindrome = "radar";
 console.log(isPalindrome(palindrome));
 console.log(isPalindrome("Anton"));
 console.log(isPalindrome("Anna"));
-
-//sorting an array of objects by a property in the objects
-//sort this list of T-Shirts alphabetically by their color
-const tshirts = [
-  { color: "black", size: "L" },
-  { color: "red", size: "XL" },
-  { color: "white", size: "XXL" },
-  { color: "yellow", size: "S" },
-  { color: "blue", size: "M" },
-];
-tshirts.sort((a, b) => {
-  if (a.color > b.color) {
-    return 1;
-  } else {
-    return -1;
-  }
-});
-console.log(tshirts);
-
-//trying to sort by size
-//idea: add property of numbers with switch case for size, then sort, then delete num property, return result
